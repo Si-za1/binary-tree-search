@@ -1,5 +1,3 @@
-#ifndef BinaryTree_h
-#define BinaryTree_h
 class BinaryTree 
 {
   public:
