@@ -1,5 +1,5 @@
 #include"bstl.h"
-#include"binarysearchtree.h"
+#include"binary search.h"
 #include <iostream>
 using namespace std;
 
@@ -20,7 +20,7 @@ ArrayBST a;
 	a.add(15);
 	a.add(14);
 	a.add(10);
-	a.add(6);
+	a.add(16);
 
 	
 	for(int i=0; i<MAXSIZE;i++){
