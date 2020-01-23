@@ -1,7 +1,7 @@
 #ifndef binary search_h
 #define binary search_h
 #include <iostream>
-class Binary search 
+class binary search 
 {
   public:
     virtual void preorder Traversal()=0;
