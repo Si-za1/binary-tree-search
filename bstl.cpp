@@ -61,6 +61,7 @@ bool linked_BST::Search(int data) {
 bool linked_BST::isEmpty() {
 	return root == NULL;
 }
+int linked_BST::max(){}
 
 int main() {
 	linked_BST tree;
