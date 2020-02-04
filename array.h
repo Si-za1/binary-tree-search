@@ -10,4 +10,5 @@ class ArrayBST:public binaryseacrhtree{
 	int element[MAXSIZE];
 	int get_left_child(int index);
 	int get_right_child(int index);
+	int min(int index);
 };
