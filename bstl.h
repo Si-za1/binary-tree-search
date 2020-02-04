@@ -15,6 +15,6 @@ public:
 	void add(int data);
 	bool Search(int data);
 	bool isEmpty();
+	bool int max();
 };
-
 #endif

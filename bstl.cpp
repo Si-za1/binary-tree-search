@@ -61,7 +61,16 @@ bool linked_BST::Search(int data) {
 bool linked_BST::isEmpty() {
 	return root == NULL;
 }
-int linked_BST::max(){}
+int linked_BST::max(){
+	while(!isEmpty()){
+		max=root->right;
+	}
+	if(isEmpty)
+
+	max=root;
+	}
+	return  max;
+}
 
 int main() {
 	linked_BST tree;
@@ -70,6 +79,7 @@ int main() {
 	tree.add(4);
 	tree.add(3);
 	if (tree.isEmpty())	cout << "empty";
+	tree.max();
 	return 0;
 }
 
