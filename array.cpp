@@ -82,5 +82,16 @@ void arrayBST:: add(int data)
 		  }
 		   return false;
 	  }
-
+int ArrayBST:: min(int index)
+{
+    
+    while(index>=MAX_SIZE)
+    {
+    	if(element[index]!=0 && (2*index)>=MAX_SIZE)
+    	return 2*index;
+	}
+	  if(element[2*index]==0)
+	  return element[index];
+   
+}
 
