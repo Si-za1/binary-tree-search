@@ -1,20 +1,40 @@
 #ifndef BSTL_H
 #define BSTL_H
+#include "binary_search_tree.h"
 
-class node {
-public:
-	int info;
-	node* right;
-	node* left;
+class Node{
+    public:
+			int info;
+			Node* left;
+			Node* right;
+		};
+
+
+
+class LinkedBST : public BinarySearchTree{
+	private:
+		Node *root;
+	
+	public:
+	    LinkedBST();
+	    ~LinkedBST();
+		void preorderTraversal();
+		void preorderTraversal(Node *root);
+		void inorderTraversal();
+		void inorderTraversal(Node* root);
+		void add(int data);
+		bool search(int data);
+		bool isEmpty();
+		int min(Node *root);
+		int max(Node *root);
+		int min();
+		int max();
+		void delete_node();
+		Node* delete_node(Node *root,int key);
+		
+		Node* get_root(){
+			return root;
+		}
+		
+		
 };
-class linked_BST ::public BinarySearchTree{
-public:
-	node* root;
-	linked_BST();
-	void preorderTraversal();
-	void add(int data);
-	bool Search(int data);
-	bool isEmpty();
-	bool int max();
-};
-#endif
